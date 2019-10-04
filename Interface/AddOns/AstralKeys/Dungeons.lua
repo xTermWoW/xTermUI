@@ -7,6 +7,10 @@ local function SetDungeonTable()
 
 	for _, mapID in pairs(dungeonTable) do
 		local name = C_ChallengeMode.GetMapUIInfo(mapID)
+		if not name then 
+			C_MythicPlus.RequestMapInfo()
+			break
+		end
 		DUNGEON_TABLE[mapID] = name
 	end
 	AstralEvents:Unregister('CHALLENGE_MODE_MAPS_UPDATE', 'SetDungeonTable')
@@ -71,5 +75,9 @@ DUNGEON_TABLE[353] = {}
 DUNGEON_TABLE[353]['name'] = 'Siege of Boralus'
 
 function e.GetMapName(mapID)
-	return DUNGEON_TABLE[tonumber(mapID)]
+	if type(DUNGEON_TABLE[mapID]) == 'table' then
+		return DUNGEON_TABLE[mapID].name
+	else
+		return DUNGEON_TABLE[mapID]
+	end
 end

@@ -204,10 +204,12 @@ T.GetRaidRosterInfo = GetRaidRosterInfo
 --Friend
 T.BNGetNumFriends = BNGetNumFriends
 T.BNGetFriendInfo = BNGetFriendInfo
-T.BNGetGameAccountInfo = BNGetGameAccountInfo --6.2.4
+T.BNGetFriendGameAccountInfo = BNGetFriendGameAccountInfo --8.2.5
 T.BNGetFriendIndex = BNGetFriendIndex
 T.GetFriendInfo = GetFriendInfo
-T.GetNumFriends = GetNumFriends
+T.GetFriendInfoByIndex = C_FriendList.GetFriendInfoByIndex
+T.GetNumFriends = C_FriendList.GetNumFriends
+T.GetNumOnlineFriends = C_FriendList.GetNumOnlineFriends
 --Quests
 T.GetQuestLogTitle = GetQuestLogTitle
 T.GetNumQuestLogEntries = GetNumQuestLogEntries
@@ -678,13 +680,13 @@ function SLE:CreateSplashScreen()
 	f:SetAlpha(0)
 
 	f.logo = f:CreateTexture(nil, 'OVERLAY')
-	f.logo:Size(240, 120)
+	f.logo:Size(240, 60)
 	f.logo:SetTexture([[Interface\AddOns\ElvUI_SLE\media\textures\SLE_Banner]])
-	f.logo:Point('TOP', f, 'TOP', 0. -60)
+	f.logo:Point('TOP', f, 'TOP', 0. -80)
 
 	f.version = f:CreateFontString(nil, 'OVERLAY')
 	f.version:FontTemplate(nil, 14, nil)
-	f.version:Point('TOP', f.logo, 'BOTTOM')
+	f.version:Point('TOP', f.logo, 'BOTTOM', 0, -20)
 	f.version:SetText(L["SLE_BENIK_AF"])
 end
 

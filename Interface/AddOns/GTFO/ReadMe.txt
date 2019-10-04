@@ -1457,3 +1457,8 @@ Change Log:
 
 4.49.3
 * Added BFA spells for The Eternal Palace
+
+4.49.4
+* Updated for patch 8.2.5
+* Added Battle for Azeroth spells (world)
+

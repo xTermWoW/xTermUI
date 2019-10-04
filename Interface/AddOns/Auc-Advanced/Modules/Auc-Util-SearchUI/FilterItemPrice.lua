@@ -1,7 +1,7 @@
 --[[
 	Auctioneer - Search UI - Filter IgnoreItemPrice
-	Version: 8.2.6355 (SwimmingSeadragon)
-	Revision: $Id: FilterItemPrice.lua 6355 2019-07-05 18:32:40Z none $
+	Version: 8.2.6432 (SwimmingSeadragon)
+	Revision: $Id: FilterItemPrice.lua 6432 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is a plugin module for the SearchUI that assists in searching by refined paramaters
@@ -97,7 +97,9 @@ end
 
 function private.OnLeaveSheet(button, row, index)
 	GameTooltip:Hide()
-	BattlePetTooltip:Hide()
+	if BattlePetTooltip then
+		BattlePetTooltip:Hide()
+	end
 end
 
 function private.OnClickSheet(button, row, index)
@@ -292,4 +294,4 @@ function lib.PostFilter(item, searcher, buyorbid)
 	end
 end
 
-AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-SearchUI/FilterItemPrice.lua $", "$Rev: 6355 $")
+AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-SearchUI/FilterItemPrice.lua $", "$Rev: 6432 $")

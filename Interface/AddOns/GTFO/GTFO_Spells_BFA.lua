@@ -263,6 +263,17 @@ GTFO.SpellID["273178"] = {
   sound = 1;
 };
 
+GTFO.SpellID["302524"] = {
+  --desc = "Dark Orb (Grip of Horror)";
+  sound = 1;
+};
+
+GTFO.SpellID["302521"] = {
+  --desc = "Dark Orb (Grip of Horror)";
+  sound = 1;
+};
+
+
 -- ***********************
 -- * Shrine of the Storm *
 -- ***********************

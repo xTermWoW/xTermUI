@@ -209,12 +209,14 @@ local function valueColor(totals)
 end
 
 function DTP:update_Friends()
+	if not E.db or not E.db.sle or not E.db.sle.dt or not E.db.sle.dt.friends then return end
 	ShowFriends()
-	local friendsTotal, friendsOnline = T.GetNumFriends()
+	local friendsTotal = T.GetNumFriends()
+	local friendsOnline = T.GetNumOnlineFriends()
 	local bnTotal, bnOnline = T.BNGetNumFriends()
 	local totalOnline = friendsOnline + bnOnline
 	local totalFriends = friendsTotal + bnTotal
-	local text = E.db.sle.dt.friends.textStyle == "Default" and FRIENDS..": " or E.db.sle.dt.friends.textStyle == "NoText" and "" or E.db.sle.dt.friends.textStyle == "Icon" and "|TInterface\\ICONS\\Achievement_Reputation_01:12|t: "
+	local text = E.db.sle.dt.friends.textStyle == "Default" and FRIENDS..": " or E.db.sle.dt.friends.textStyle == "NoText" and "" or E.db.sle.dt.friends.textStyle == "Icon" and "|TInterface\\ICONS\\Achievement_Reputation_01:12|t: " or ""
 	if E.db.sle.dt.friends.totals then
 		LDB.text = text..valueColor(totalOnline).."/"..valueColor(totalFriends)
 	else
@@ -341,7 +343,7 @@ function LDB.OnEnter(self)
 	end
 
 	local _, numBNOnline = T.BNGetNumFriends()
-	local _, numFriendsOnline = T.GetNumFriends()
+	local numFriendsOnline = T.GetNumOnlineFriends()
 
 	if (numBNOnline > 0) or (numFriendsOnline > 0) then
 		line = tooltip:AddLine()
@@ -377,7 +379,7 @@ function LDB.OnEnter(self)
 				T.twipe(realid_table)
 				for i = 1, numBNOnline do
 					local presenceID, givenName, bTag, _, _, toonID, gameClient, isOnline, lastOnline, isAFK, isDND, broadcast, note, _, castTime = T.BNGetFriendInfo(i)
-					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText, _, _, canSoR, _, _, _, _, playerGUID, WoWProjectID = T.BNGetGameAccountInfo(toonID or 0)
+					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText, _, _, canSoR, _, _, _, _, playerGUID, WoWProjectID = T.BNGetFriendGameAccountInfo(i , 1)
 					local broadcastTime = ""
 					if castTime then
 						broadcastTime = T.format(BNET_BROADCAST_SENT_TIME, sletime_Conversion(castTime));
@@ -480,8 +482,6 @@ function LDB.OnEnter(self)
 							line = tooltip:SetCell(line, 6, "|cffffffffDestiny 2|r")
 						elseif player["CLIENT"] == "VIPR" then
 							line = tooltip:SetCell(line, 6, "CoD")
-						else
-							print(player["GIVENNAME"], player["CLIENT"])
 						end
 					end
 
@@ -587,13 +587,13 @@ end)
 
 function frame:PLAYER_LOGIN()
 	local _, numBNOnline = T.BNGetNumFriends()
-	local _, numFriendsOnline = T.GetNumFriends()
+	local numFriendsOnline = T.GetNumOnlineFriends()
 
 	if (numBNOnline > 0) or (numFriendsOnline > 0) then
 		if numBNOnline > 0 then
 			for i = 1, numBNOnline do
 					local presenceID, givenName, bTag, _, _, toonID, gameClient, isOnline, lastOnline, isAFK, isDND, broadcast, note, _, castTime = T.BNGetFriendInfo(i)
-					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText = T.BNGetGameAccountInfo(toonID or 0)
+					local _, toonName, client, realmName, realmID, faction, race, class, guild, zoneName, level, gameText = T.BNGetFriendGameAccountInfo(i, 1)
 			end
 		end
 	end

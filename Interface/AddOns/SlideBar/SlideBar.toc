@@ -7,7 +7,7 @@
 ## SavedVariables: SlideBarConfig
 ##
 ## Version: 8.2.6375 (SwimmingSeadragon)
-## Revision: $Id: SlideBar.toc 6375 2019-07-05 18:32:40Z none $
+## Revision: $Id: SlideBar.toc 6375 2019-09-25 00:20:07Z none $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Libraries
 ## X-Category: Library

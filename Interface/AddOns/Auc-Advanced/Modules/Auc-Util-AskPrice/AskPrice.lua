@@ -1,7 +1,7 @@
 --[[
 	Auctioneer Addon for World of Warcraft(tm).
 	Version: 8.2.6379 (SwimmingSeadragon)
-	Revision: $Id: AskPrice.lua 6379 2019-07-05 18:32:40Z none $
+	Revision: $Id: AskPrice.lua 6379 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	Auctioneer AskPrice created by Mikezter and merged into
