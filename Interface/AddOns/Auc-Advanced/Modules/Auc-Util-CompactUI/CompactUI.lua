@@ -1,7 +1,7 @@
 ﻿--[[
 	Auctioneer - Price Level Utility module
-	Version: 8.2.6361 (SwimmingSeadragon)
-	Revision: $Id: CompactUI.lua 6361 2019-07-05 18:32:40Z none $
+	Version: 8.2.6410 (SwimmingSeadragon)
+	Revision: $Id: CompactUI.lua 6410 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds a price level indicator
@@ -150,7 +150,9 @@ function private.HookAH()
 		BrowseCurrentBidSort:Hide()
 	end
 	HideBlizzardColumnHeaders()
-	BrowseResetButton:HookScript("OnClick", HideBlizzardColumnHeaders)
+	if BrowseResetButton then -- doesn't exist in Classic
+		BrowseResetButton:HookScript("OnClick", HideBlizzardColumnHeaders)
+	end
 	hooksecurefunc("AuctionFrameBrowse_Reset", HideBlizzardColumnHeaders) -- hook this too, in case it's called by a third party AddOn
 	hooksecurefunc("AuctionFrameFilter_OnClick", function()
 		HideBlizzardColumnHeaders()
@@ -544,7 +546,9 @@ function private.IconLeave(this)
 	button.Icon:SetWidth(16)
 	button.Icon:SetHeight(16)
 	GameTooltip:Hide()
-	BattlePetTooltip:Hide()
+	if BattlePetTooltip then
+		BattlePetTooltip:Hide()
+	end
 	ResetCursor()
 end
 
@@ -602,6 +606,11 @@ local function BrowseSortFunction(a, b)
 end
 
 local lookupTimeLeft = {"30m", "2h", "12h", "48h"}
+
+if AucAdvanced.Classic then
+    lookupTimeLeft = {"30m", "2h", "8h", "24h"}
+end
+
 function private.RetrievePage()
 	wipe(private.pageContents)
 
@@ -930,4 +939,4 @@ function lib.GetButtons()
 end
 
 
-AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-CompactUI/CompactUI.lua $", "$Rev: 6361 $")
+AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-CompactUI/CompactUI.lua $", "$Rev: 6410 $")

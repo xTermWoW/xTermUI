@@ -1,7 +1,7 @@
 --[[
 	Auctioneer
-	Version: 8.2.6338 (SwimmingSeadragon)
-	Revision: $Id: CoreScan.lua 6338 2019-07-05 18:32:40Z none $
+	Version: 8.2.6430 (SwimmingSeadragon)
+	Revision: $Id: CoreScan.lua 6430 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds statistical history to the auction data that is collected
@@ -1845,7 +1845,6 @@ end
 do
 	local PetInfoCache, ItemTried, PetTried = {}, {}, {}
 	local lookupPetType2SubClassID = Const.AC_PetType2SubClassID
-	local GetPetInfoBySpeciesID = C_PetJournal.GetPetInfoBySpeciesID
 	local GetItemInfoCacheLib = AucAdvanced.GetItemInfoCache
 
 	function private.ResetItemInfoCache()
@@ -1881,7 +1880,7 @@ do
 				-- GetPetInfoBySpeciesID previously failed for this speciesID in this processing pass
 				return
 			end
-			local _, _, petType = GetPetInfoBySpeciesID(speciesID)
+			local _, _, petType = C_PetJournal.GetPetInfoBySpeciesID(speciesID)
 			if petType then
 				subtype = lookupPetType2SubClassID[petType]
 				PetInfoCache[speciesID] = subtype
@@ -3476,5 +3475,5 @@ function internalScan.NotifyOwnedListUpdated()
 --	end
 end
 
-AucAdvanced.RegisterRevision("$URL: Auc-Advanced/CoreScan.lua $", "$Rev: 6338 $")
+AucAdvanced.RegisterRevision("$URL: Auc-Advanced/CoreScan.lua $", "$Rev: 6430 $")
 AucAdvanced.CoreFileCheckOut("CoreScan")

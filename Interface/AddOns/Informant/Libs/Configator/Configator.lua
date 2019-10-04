@@ -1,7 +1,7 @@
 --[[
 	Configator - A library to help you create a gui config
 	Version: 8.2.6341 (SwimmingSeadragon)
-	Revision: $Id: Configator.lua 6341 2019-07-05 18:32:40Z none $
+	Revision: $Id: Configator.lua 6341 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/dl/
 
 	License:

@@ -1,7 +1,7 @@
 --[[
 	Auctioneer - Price Level Utility module
 	Version: 8.2.6356 (SwimmingSeadragon)
-	Revision: $Id: PriceLevel.lua 6356 2019-07-05 18:32:40Z none $
+	Revision: $Id: PriceLevel.lua 6356 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds a price level indicator

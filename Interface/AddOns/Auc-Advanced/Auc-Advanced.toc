@@ -8,8 +8,8 @@
 ## SavedVariables: AucAdvancedConfig, AucAdvancedData, AucAdvancedServers
 ## SavedVariablesPerCharacter: AucAdvancedLocal
 ##
-## Version: 8.2.6338 (SwimmingSeadragon)
-## Revision: $Id: Auc-Advanced.toc 6338 2019-07-05 18:32:40Z none $
+## Version: 8.2.6430 (SwimmingSeadragon)
+## Revision: $Id: Auc-Advanced.toc 6430 2019-09-25 00:20:07Z none $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Auctioneer
 ## X-Category: Auction House

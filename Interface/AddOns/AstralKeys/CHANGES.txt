@@ -1,13 +1,21 @@
-lightweight tag 90999687adbed21af91df7d1cefd6aa91bf83ad2 3.16
-Author:	Drew <phriked@gmail.com>
-Date:	Wed Aug 14 19:05:58 2019 -0700
+lightweight tag e19f3b74090fb15e167809c1a7d324fab2119523 3.20
+Author:	Phrike <phriked@gmail.com>
+Date:	Thu Oct 3 09:29:04 2019 -0700
 
-commit 90999687adbed21af91df7d1cefd6aa91bf83ad2
-Author: Drew <phriked@gmail.com>
-Date:   Wed Aug 14 19:05:58 2019 -0700
+commit e19f3b74090fb15e167809c1a7d324fab2119523
+Author: Phrike <phriked@gmail.com>
+Date:   Thu Oct 3 09:29:04 2019 -0700
 
-    Bug fix
+    Possible fix
     
-    - Fixed issue where the weekly best key is not being tracked
-    - Fixed issue where weekly best is being shown as current chest reward
+    - Possible fix to issues
+
+commit 023d4b68a08c2562081d2b67b83482cedc451b7a
+Author: Phrike <phriked@gmail.com>
+Date:   Wed Oct 2 17:22:42 2019 -0700
+
+    Potential Fix
+    
+    - Potential fix for friends syncing
+    - Fixed dungeon API returning a table instead of a string
 

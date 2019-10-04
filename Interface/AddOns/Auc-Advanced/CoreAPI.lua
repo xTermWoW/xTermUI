@@ -1,7 +1,7 @@
 --[[
 	Auctioneer Advanced
-	Version: 8.2.6338 (SwimmingSeadragon)
-	Revision: $Id: CoreAPI.lua 6338 2019-07-05 18:32:40Z none $
+	Version: 8.2.6430 (SwimmingSeadragon)
+	Revision: $Id: CoreAPI.lua 6430 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds statistical history to the auction data that is collected
@@ -630,9 +630,11 @@ end
 function lib.ProgressBars(name, value, show, text, options)
 	-- reanchor first bar so we can display even if AH is closed
 	if AuctionFrame and AuctionFrame:IsShown() then
+		ProgressBarFrames[1]:ClearAllPoints()
 		ProgressBarFrames[1]:SetPoint("TOPRIGHT", AuctionFrame, "TOPRIGHT", -5, 5)
 	else
-		ProgressBarFrames[1]:SetPoint("CENTER", UIParent, "CENTER", -5,5)
+		ProgressBarFrames[1]:ClearAllPoints()
+		ProgressBarFrames[1]:SetPoint("CENTER", UIParent, "CENTER", 0, 250)
 	end
 
 	if type(name) ~= "string" then return end
@@ -1527,5 +1529,5 @@ do
 end
 
 
-AucAdvanced.RegisterRevision("$URL: Auc-Advanced/CoreAPI.lua $", "$Rev: 6338 $")
+AucAdvanced.RegisterRevision("$URL: Auc-Advanced/CoreAPI.lua $", "$Rev: 6430 $")
 AucAdvanced.CoreFileCheckOut("CoreAPI")

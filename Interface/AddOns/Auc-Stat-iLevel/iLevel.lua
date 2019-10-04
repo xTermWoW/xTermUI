@@ -1,7 +1,7 @@
 --[[
 	Auctioneer - iLevel Standard Deviation Statistics module
 	Version: 8.2.6370 (SwimmingSeadragon)
-	Revision: $Id: iLevel.lua 6370 2019-07-05 18:32:40Z none $
+	Revision: $Id: iLevel.lua 6370 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds statistical history to the auction data that is collected

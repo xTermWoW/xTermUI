@@ -1,7 +1,7 @@
 --[[
 	Auctioneer - AutoMagic Utility module
-	Version: 8.2.6360 (SwimmingSeadragon)
-	Revision: $Id: Core.lua 6360 2019-07-05 18:32:40Z none $
+	Version: 8.2.6424 (SwimmingSeadragon)
+	Revision: $Id: Core.lua 6424 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	AutoMagic is an Auctioneer module which automates mundane tasks for you.
@@ -363,13 +363,11 @@ local InventoryTypes = {
 	[INVTYPE_NECK] = INVTYPE_NECK,
 	[INVTYPE_QUIVER] = INVTYPE_QUIVER,
 	[INVTYPE_RANGED] = INVTYPE_RANGED,
-	[INVTYPE_RANGEDRIGHT] = INVTYPE_RANGEDRIGHT,
 	[INVTYPE_RELIC] = INVTYPE_RELIC,
 	[INVTYPE_ROBE] = INVTYPE_ROBE,
 	[INVTYPE_SHIELD] = INVTYPE_SHIELD,
 	[INVTYPE_SHOULDER] = INVTYPE_SHOULDER,
 	[INVTYPE_TABARD] = INVTYPE_TABARD,
-	[INVTYPE_THROWN] = INVTYPE_THROWN,
 	[INVTYPE_TRINKET] = INVTYPE_TRINKET ,
 	[INVTYPE_WAIST] = INVTYPE_WAIST,
 	[INVTYPE_WEAPON] = INVTYPE_WEAPON,
@@ -378,44 +376,59 @@ local InventoryTypes = {
 	[INVTYPE_WEAPONOFFHAND] = INVTYPE_WEAPONOFFHAND,
 	[INVTYPE_WRIST] = INVTYPE_WRIST,
 }
+if not AucAdvanced.Classic then
+	InventoryTypes[INVTYPE_RANGEDRIGHT] = INVTYPE_RANGEDRIGHT
+	InventoryTypes[INVTYPE_THROWN] = INVTYPE_THROWN
+end
+
 --Auc Core tooltip scanner
 local ScanTip  = AppraiserTip
 local ScanTip2  = AppraiserTipTextLeft2
 local ScanTip3 = AppraiserTipTextLeft3
 local ScanTipRight2  = AppraiserTipTextRight2
 local ScanTipRight3 = AppraiserTipTextRight3
+
 function lib.cannotUse(itemSubType)
 	--scan tooltip  if its a valid equip text, look at color
-	if InventoryTypes[ScanTip2:GetText()] or InventoryTypes[ScanTip3:GetText()] then
+	if InventoryTypes[ScanTip2:GetText()] or (ScanTip3 and InventoryTypes[ScanTip3:GetText()]) then
 		local hex,r,g,b
 
-		r,g,b = ScanTip2:GetTextColor()
-		hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
-		if ScanTip2:GetText() and hex == "fe1f1f" then
---~ 			aucPrint(2, AppraiserTipTextLeft1:GetText(), ScanTip2:GetText())
-			return true
-		end
+        if ScanTip2 then
+            r,g,b = ScanTip2:GetTextColor()
+            hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
+            if ScanTip2:GetText() and hex == "fe1f1f" then
+    --~ 			aucPrint(2, AppraiserTipTextLeft1:GetText(), ScanTip2:GetText())
+                return true
+            end
+        end
 
-		r,g,b = ScanTip3:GetTextColor()
-		hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
-		if ScanTip3:GetText() and hex == "fe1f1f" then
---~ 			aucPrint(3, AppraiserTipTextLeft1:GetText(), ScanTip3:GetText())
-			return true
-		end
+        if ScanTip3 then
+            r,g,b = ScanTip3:GetTextColor()
+            hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
+            if ScanTip3:GetText() and hex == "fe1f1f" then
+    --~ 			aucPrint(3, AppraiserTipTextLeft1:GetText(), ScanTip3:GetText())
+                return true
+            end
+        end
+
 		--check for red text in right side of tooltip
-		r,g,b = ScanTipRight2:GetTextColor()
-		hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
-		if ScanTipRight2:GetText() and hex == "fe1f1f" then
---~ 			aucPrint(4, AppraiserTipTextLeft1:GetText(), ScanTipRight2:GetText())
-			return true
-		end
+        if ScanTipRight2 then
+            r,g,b = ScanTipRight2:GetTextColor()
+            hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
+            if ScanTipRight2:GetText() and hex == "fe1f1f" then
+    --~ 			aucPrint(4, AppraiserTipTextLeft1:GetText(), ScanTipRight2:GetText())
+                return true
+            end
+        end
 
-		r,g,b = ScanTipRight3:GetTextColor()
-		hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
-		if ScanTipRight3:GetText() and hex == "fe1f1f" then
---~ 			aucPrint(5, AppraiserTipTextLeft1:GetText(), ScanTipRight3:GetText())
-			return true
-		end
+        if ScanTipRight3 then
+            r,g,b = ScanTipRight3:GetTextColor()
+            hex = string.format("%02x%02x%02x", r*255, g*255, b*255)
+            if ScanTipRight3:GetText() and hex == "fe1f1f" then
+    --~ 			aucPrint(5, AppraiserTipTextLeft1:GetText(), ScanTipRight3:GetText())
+                return true
+            end
+        end
 
 	end
 	--its equipable by the class so dont sell
@@ -427,12 +440,13 @@ local BindTypes = {
 	[ITEM_SOULBOUND] = "Bound",
 	[ITEM_BIND_ON_PICKUP] = "Bound",
 }
+
 --tooltip checks soulbound status
 function lib.isSoulbound(bag, slot)
 	ScanTip:SetOwner(UIParent, "ANCHOR_NONE")
 	ScanTip:ClearLines()
 	ScanTip:SetBagItem(bag, slot)
-	return BindTypes[ScanTip2:GetText()] or BindTypes[ScanTip3:GetText()]
+	return BindTypes[ScanTip2:GetText()] or (ScanTip3 and BindTypes[ScanTip3:GetText()])
 end
 
 lib.vendorlist = {}
@@ -665,4 +679,4 @@ end
 
 
 
-AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-AutoMagic/Core.lua $", "$Rev: 6360 $")
+AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-AutoMagic/Core.lua $", "$Rev: 6424 $")

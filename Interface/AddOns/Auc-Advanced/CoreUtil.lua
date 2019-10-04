@@ -1,7 +1,7 @@
 --[[
 	Auctioneer
-	Version: 8.2.6338 (SwimmingSeadragon)
-	Revision: $Id: CoreUtil.lua 6338 2019-07-05 18:32:40Z none $
+	Version: 8.2.6430 (SwimmingSeadragon)
+	Revision: $Id: CoreUtil.lua 6430 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds statistical history to the auction data that is collected
@@ -244,6 +244,15 @@ do
 		{24, FORMATED_HOURS:format(24)},
 		{48, FORMATED_HOURS:format(48)},
 	}
+
+    if AucAdvanced.Classic then
+        auctionlength = {
+            {2, FORMATED_HOURS:format(2)},
+            {8, FORMATED_HOURS:format(8)},
+            {24, FORMATED_HOURS:format(24)},
+        }
+    end
+
 	-- List of Auction Durations for use in deposit cost dropdowns
 	function lib.selectorAuctionLength()
 		return auctionlength
@@ -956,5 +965,5 @@ function lib.CreateMoney(height)
 	return (tooltip:CreateMoney(height))
 end
 
-lib.RegisterRevision("$URL: Auc-Advanced/CoreUtil.lua $", "$Rev: 6338 $")
+lib.RegisterRevision("$URL: Auc-Advanced/CoreUtil.lua $", "$Rev: 6430 $")
 lib.CoreFileCheckOut("CoreUtil")

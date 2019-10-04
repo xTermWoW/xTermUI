@@ -1,7 +1,7 @@
 --[[
 	Auctioneer - Appraisals and Auction Posting
-	Version: 8.2.6348 (SwimmingSeadragon)
-	Revision: $Id: AprSettings.lua 6348 2019-07-05 18:32:40Z none $
+	Version: 8.2.6417 (SwimmingSeadragon)
+	Revision: $Id: AprSettings.lua 6417 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds an appraisals tab to the AH for
@@ -67,6 +67,14 @@ private.durations = {
 	{ 1440, _TRANS('APPR_Interface_24Hours')  },--24 hours
 	{ 2880, _TRANS('APPR_Interface_48Hours')  },--48 hours
 }
+
+if AucAdvanced.Classic then
+    private.durations = {
+        { 120, _TRANS('APPR_Interface_2Hours')  },--2 hours
+        { 480, _TRANS('APPR_Interface_8Hours')  },--8 hours
+        { 1440, _TRANS('APPR_Interface_24Hours')  },--24 hours
+    }
+end
 
 --[[ The items are stored as:
 ----   id, name, texture, quality
@@ -563,4 +571,4 @@ function private.SetupConfigGui(gui)
 	private.guiId = id
 end
 
-AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-Appraiser/AprSettings.lua $", "$Rev: 6348 $")
+AucAdvanced.RegisterRevision("$URL: Auc-Advanced/Modules/Auc-Util-Appraiser/AprSettings.lua $", "$Rev: 6417 $")

@@ -1,7 +1,7 @@
 --[[
 	Auctioneer - Scan Start module
 	Version: 8.2.6363 (SwimmingSeadragon)
-	Revision: $Id: ScanStart.lua 6363 2019-07-05 18:32:40Z none $
+	Revision: $Id: ScanStart.lua 6363 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an Auctioneer module that adds a few event functionalities

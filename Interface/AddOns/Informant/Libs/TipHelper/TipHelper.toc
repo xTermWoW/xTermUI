@@ -6,8 +6,8 @@
 ## Dependencies: LibExtraTip
 ## OptionalDependencies: !nLog
 ##
-## Version: 8.2.6343 (SwimmingSeadragon)
-## Revision: $Id: TipHelper.toc 6343 2019-07-05 18:32:40Z none $
+## Version: 8.2.6386 (SwimmingSeadragon)
+## Revision: $Id: TipHelper.toc 6386 2019-09-25 00:20:07Z none $
 ## Author: Norganna's AddOns
 ## X-Part-Of: Libraries
 ## X-Category: Library

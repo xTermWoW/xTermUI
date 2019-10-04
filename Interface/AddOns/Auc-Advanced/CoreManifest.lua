@@ -1,7 +1,7 @@
 --[[
 	Auctioneer
-	Version: 8.2.6338 (SwimmingSeadragon)
-	Revision: $Id: CoreManifest.lua 6338 2019-07-05 18:32:40Z none $
+	Version: 8.2.6430 (SwimmingSeadragon)
+	Revision: $Id: CoreManifest.lua 6430 2019-09-25 00:20:07Z none $
 	URL: http://auctioneeraddon.com/
 
 	This is an addon for World of Warcraft that adds statistical history to the auction data that is collected
@@ -68,6 +68,9 @@ local lib = AucAdvanced
 local DEV_VERSION = "7.7.DEV"
 local MINIMUM_TOC = 80000
 local MINIMUM_CLIENT = "8.0.0"
+local MINIMUM_CLASSIC = 11300
+local MAXIMUM_CLASSIC = 11399
+local MINIMUM_CLIENT_CLASSIC = "1.13.0"
 -- MINIMUM_BUILD is optional, and should only be used where TOC is not sufficient; otherwise it should be commented out
 -- local MINIMUM_BUILD = 00000
 
@@ -100,7 +103,7 @@ end
 lib.CoreFileCheckIn("CoreManifest") -- check CoreManifest in as early as possible
 
 -- Version checking
-lib.Version="8.2.6338";
+lib.Version="8.2.6430";
 if lib.Version:byte(1) == 60 then -- 60 = '<'
 	lib.Version = DEV_VERSION
 end
@@ -117,9 +120,13 @@ lib.RETFUNCTION = function(x) return x end
 
 -- Check TOC version meets minimum requirements
 local _,build,_,tocVersion = GetBuildInfo()
-if tocVersion < MINIMUM_TOC or (MINIMUM_BUILD and tonumber(build) < MINIMUM_BUILD) then
-	message("Auctioneer requires game client version "..MINIMUM_CLIENT.." or higher.")
-	lib.ABORTLOAD = "Incorrect WoW client version"
+lib.Classic = (tocVersion > MINIMUM_CLASSIC and tocVersion < MAXIMUM_CLASSIC)
+-- Check for Classic range first
+if not lib.Classic then
+	if tocVersion < MINIMUM_TOC or (MINIMUM_BUILD and tonumber(build) < MINIMUM_BUILD) then
+		message("Auctioneer requires game client version "..MINIMUM_CLIENT.." or higher, or Classic game client version "..MINIMUM_CLIENT_CLASSIC.." or higher.")
+		lib.ABORTLOAD = "Incorrect WoW client version"
+	end
 end
 
 -- Check that Stubby exists
@@ -292,5 +299,5 @@ function lib.ValidateInstall()
 end
 
 
-lib.RegisterRevision("$URL: Auc-Advanced/CoreManifest.lua $", "$Rev: 6338 $")
+lib.RegisterRevision("$URL: Auc-Advanced/CoreManifest.lua $", "$Rev: 6430 $")
 lib.CoreFileCheckOut("CoreManifest")
