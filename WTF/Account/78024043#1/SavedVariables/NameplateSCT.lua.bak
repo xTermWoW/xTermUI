@@ -1,0 +1,19 @@
+
+NameplateSCTDB = {
+	["profileKeys"] = {
+		["Aeldonan - Azralon"] = "Default",
+		["Aeldonen - Nemesis"] = "Default",
+		["Wahisietel - Goldrinn"] = "Default",
+		["Rielas - Illidan"] = "Default",
+		["Aeldenon - Nemesis"] = "Default",
+		["Aeldronan - Nemesis"] = "Default",
+		["Aeldonan - Stormrage"] = "Default",
+		["Aeldraeon - Azralon"] = "Default",
+		["Aeldenan - Nemesis"] = "Default",
+		["Aeldonen - Stormrage"] = "Default",
+		["Aeldenan - Stormrage"] = "Default",
+		["Flavindozap - Bleeding Hollow"] = "Default",
+		["Aeldenon - Stormrage"] = "Default",
+		["Aelkham - Azralon"] = "Default",
+	},
+}

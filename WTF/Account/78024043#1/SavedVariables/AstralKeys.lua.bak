@@ -1,0 +1,218 @@
+
+AstralKeys = {
+	{
+		"Dontheal-Azralon", -- [1]
+		"DRUID", -- [2]
+		248, -- [3]
+		14, -- [4]
+		0, -- [5]
+		113, -- [6]
+		36800, -- [7]
+	}, -- [1]
+	{
+		"Cardavis-Azralon", -- [1]
+		"WARLOCK", -- [2]
+		252, -- [3]
+		13, -- [4]
+		0, -- [5]
+		113, -- [6]
+		37661, -- [7]
+	}, -- [2]
+	{
+		"Oldkiller-Azralon", -- [1]
+		"WARRIOR", -- [2]
+		247, -- [3]
+		15, -- [4]
+		0, -- [5]
+		113, -- [6]
+		3, -- [7]
+	}, -- [3]
+	{
+		"Pézão-Azralon", -- [1]
+		"DRUID", -- [2]
+		353, -- [3]
+		10, -- [4]
+		0, -- [5]
+		113, -- [6]
+		2, -- [7]
+	}, -- [4]
+	{
+		"Sesituaa-Azralon", -- [1]
+		"WARLOCK", -- [2]
+		244, -- [3]
+		13, -- [4]
+		0, -- [5]
+		113, -- [6]
+		34142, -- [7]
+	}, -- [5]
+	{
+		"Trinito-Azralon", -- [1]
+		"HUNTER", -- [2]
+		251, -- [3]
+		14, -- [4]
+		0, -- [5]
+		113, -- [6]
+		39965, -- [7]
+	}, -- [6]
+	{
+		"Aeldonan-Azralon", -- [1]
+		"DRUID", -- [2]
+		246, -- [3]
+		10, -- [4]
+		0, -- [5]
+		113, -- [6]
+		32319, -- [7]
+	}, -- [7]
+	{
+		"Koalas-Azralon", -- [1]
+		"MONK", -- [2]
+		250, -- [3]
+		10, -- [4]
+		0, -- [5]
+		113, -- [6]
+		32575, -- [7]
+	}, -- [8]
+	{
+		"ßûsh-Azralon", -- [1]
+		"DEATHKNIGHT", -- [2]
+		250, -- [3]
+		13, -- [4]
+		0, -- [5]
+		113, -- [6]
+		38319, -- [7]
+	}, -- [9]
+}
+AstralCharacters = {
+	{
+		["weekly_best"] = 0,
+		["class"] = "DRUID",
+		["faction"] = 1,
+		["unit"] = "Aeldonan-Azralon",
+	}, -- [1]
+	{
+		["weekly_best"] = 0,
+		["class"] = "HUNTER",
+		["unit"] = "Aeldraeon-Azralon",
+		["faction"] = 1,
+	}, -- [2]
+}
+AstralFriends = {
+	{
+		"Trinito-Azralon", -- [1]
+		"Trinito#1406", -- [2]
+		"HUNTER", -- [3]
+		251, -- [4]
+		14, -- [5]
+		113, -- [6]
+		32691, -- [7]
+		"1", -- [8]
+		0, -- [9]
+	}, -- [1]
+	{
+		"Koalas-Azralon", -- [1]
+		"Koalax#1283", -- [2]
+		"MONK", -- [3]
+		250, -- [4]
+		10, -- [5]
+		113, -- [6]
+		32575, -- [7]
+		"1", -- [8]
+		0, -- [9]
+	}, -- [2]
+	{
+		"ßûsh-Azralon", -- [1]
+		"Realbush#1350", -- [2]
+		"DEATHKNIGHT", -- [3]
+		250, -- [4]
+		13, -- [5]
+		113, -- [6]
+		38299, -- [7]
+		"1", -- [8]
+		0, -- [9]
+	}, -- [3]
+}
+AstralKeysSettings = {
+	["friendOptions"] = {
+		["friend_sync"] = {
+			["isEnabled"] = true,
+		},
+		["show_other_faction"] = {
+			["isEnabled"] = true,
+		},
+	},
+	["new_settings_config"] = true,
+	["general"] = {
+		["show_minimap_button"] = {
+			["isEnabled"] = true,
+		},
+		["init_time"] = 1569337200,
+		["expanded_tooltip"] = {
+			["isEnabled"] = true,
+		},
+		["report_on_message"] = {
+			["guild"] = false,
+			["raid"] = false,
+			["no_key"] = false,
+			["party"] = true,
+		},
+		["show_tooltip_key"] = {
+			["isEnabled"] = true,
+		},
+		["announce_party"] = {
+			["isEnabled"] = true,
+		},
+		["announce_guild"] = {
+			["isEnabled"] = false,
+		},
+	},
+	["frame"] = {
+		["rank_filter"] = {
+			true, -- [1]
+			true, -- [2]
+			true, -- [3]
+			true, -- [4]
+			true, -- [5]
+			true, -- [6]
+			true, -- [7]
+			true, -- [8]
+			true, -- [9]
+			true, -- [10]
+		},
+		["show_offline"] = {
+			["isEnabled"] = true,
+		},
+		["isCollapsed"] = {
+			["isEnabled"] = false,
+		},
+		["orientation"] = 1,
+		["mingle_offline"] = {
+			["isEnabled"] = false,
+		},
+		["sorth_method"] = "character_name",
+		["current_list"] = "GUILD",
+	},
+}
+AstralMinimap = {
+	["profileKeys"] = {
+		["Aeldraeon - Azralon"] = "Aeldraeon - Azralon",
+		["Aeldonan - Azralon"] = "Aeldonan - Azralon",
+		["Aeldrenon - Azralon"] = "Aeldrenon - Azralon",
+		["Aeldenon - Azralon"] = "Aeldenon - Azralon",
+	},
+	["profiles"] = {
+		["Aeldraeon - Azralon"] = {
+			["minimap"] = {
+				["minimapPos"] = 178.2454622776882,
+			},
+		},
+		["Aeldonan - Azralon"] = {
+			["minimap"] = {
+				["minimapPos"] = 192.123254358527,
+			},
+		},
+		["Aeldrenon - Azralon"] = {
+		},
+		["Aeldenon - Azralon"] = {
+		},
+	},
+}

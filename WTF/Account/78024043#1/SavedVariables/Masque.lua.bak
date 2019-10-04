@@ -1,0 +1,581 @@
+
+MasqueDB = {
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Aeldonan - Azralon"] = "Default",
+		["Aeldonen - Nemesis"] = "Default",
+		["Wahisietel - Goldrinn"] = "Default",
+		["Aeldenon - Nemesis"] = "Default",
+		["Aeldenon - Azralon"] = "Default",
+		["Aeldronan - Nemesis"] = "Default",
+		["Aeldenan - Nemesis"] = "Default",
+		["Aeldrenon - Azralon"] = "Default",
+		["Aeldraeon - Azralon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["Groups"] = {
+				["WeakAuras_rapid_fire"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_harpoon"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_double_tap"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_tar_trap"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_kill_command_au"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_ca"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_frozen_orb"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_lunar_empowerment"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_kill_command_au_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_rapid_fire_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_barrage"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_arcane_intellect"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_frenzy_missing"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_blizzard"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_piercing_shot"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_thrash"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_serpent_sting_-_sv"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_double_tap_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_benis_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_barbed_shot_2_stacks"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_si_running"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aspect_of_the_cheetah"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_trueshot_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_chakrams"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_disengage"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_t1"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_a_murder_of_crows_-_sv"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_t2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_spread"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_trueshot"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_double_tap_bufferino"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_t4"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_steel_trap"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_icy_veins"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_barkskin_ready"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_carve"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_flanking_strike"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_barbed_shot"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_a_murder_of_crows"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_freezing_trap"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_frenzy_-_buff"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_comet_storm_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aspect_of_the_wild"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_mongoose_bite"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_viper's_venom"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_fury_of_elune_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_coordinated_assault"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_fr_ready_stacks"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_fr_running"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["ElvUI_Consolidated Buffs"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_moonfire_pandemic_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_pearl_diver's_compass"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_srpent_sting"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_beast_cleave"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_si_cooldown"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_thrill_of_the_hunt"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_blizzard_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["ElvUI_Stance Bar"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_srpent_sting_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_beam"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_hunter's_mark_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_moon"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_stack"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aspect_of_the_wild_20_sec"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_sunfire_pandemic"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_no_soak"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_bestial_wrath_20_sec"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_barkskin_running"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_lethal_shots"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_08_beckon_on_you"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_bestial_wrath"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_trueshot_aura_-_buff"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_concentrated_flame_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aspect_of_the_eagle"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_soak"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aspect_of_the_wild_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_bestial_wrath_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_focused_azerite_beam"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_barbed_shot_cd"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_bestial_wrath_-_buff"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_solar_empowerment_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_mangle"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_coordinated_assault_-_buff"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_hunter's_mark"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["ElvUI"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_sunfire"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_chimaera_shot"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_stay"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_chimera_shot"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_keep_moving"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_azerite"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["ElvUI_Pet Bar"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_celestial_alignment_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_frenzy"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_beast_cleave_-_buff"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_arcanic_pulsar"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_lunar_empowerment_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_counterspell_cd_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_a_muder_of_crows"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_solar_empowerment"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_barrage_-_mm"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_concentrated_flame"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_master_marksman"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_ebonbolt_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_benis"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["ElvUI_ActionBars"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_wildfire_bomb"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_celestial_alignment"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aimed_shot"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_moonfire_3"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_stampede"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_moonfire_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_new"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_comet_storm"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_steady_focus"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_kill_command"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_shs"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_a_murder_of_crows_-_mm"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_moonfire"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aspect_of_the_wild_-_buff"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_barkskin_cooldown"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_si_ready_stacks"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_ebonbolt"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_frenzy_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_spitting_cobra"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_aimed_shot_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_serpent_sting"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_shimmer_cd1"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["WeakAuras_aspect_of_the_eagle_-_buff"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_srpent_sting_refresh"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_counterspell"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_butchery"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_explosive_shot"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_skin"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_shimmer_cd2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_starlord"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_fury"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_tip_of_the_spear"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_kill_command_-_sv"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_fury_of_elune"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_barbed_shot_stacks"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_fr_cooldown"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_sunfire_2"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_binding_shot"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_dire_beast"] = {
+					["SkinID"] = "Zoomed",
+				},
+				["ElvUI_Buffs"] = {
+					["Inherit"] = false,
+				},
+				["ElvUI_Debuffs"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_moonfire_pandemic"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Zoomed",
+				},
+				["WeakAuras_counterspell_cd"] = {
+					["SkinID"] = "Zoomed",
+					["Inherit"] = false,
+				},
+				["OPie"] = {
+					["Inherit"] = false,
+				},
+			},
+		},
+	},
+}

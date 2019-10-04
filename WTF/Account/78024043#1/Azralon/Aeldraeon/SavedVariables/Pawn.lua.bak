@@ -1,0 +1,94 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0246,
+	["LastPlayerFullName"] = "Aeldraeon-Azralon",
+	["AutoSelectScales"] = false,
+	["UpgradeTracking"] = false,
+	["ItemLevels"] = {
+		{
+			["ID"] = 159358,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:159358::::::::120:253::35:4:5448:1617:4786:6270:::|h[Coif of the Court Spider]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 158075,
+			["Level"] = 455,
+			["Link"] = "|cffe6cc80|Hitem:158075::::::::120:253::11:4:4932:4933:6316:1592:::|h[Heart of Azeroth]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 159385,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:159385::::::::120:253::35:5:5445:1602:4786:6268:4775:::|h[Amalgamated Abomination Spaulders]|h|r",
+		}, -- [3]
+		nil, -- [4]
+		{
+			["ID"] = 159354,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:159354::::::::120:253::35:5:5445:1602:4786:6266:4775:::|h[Hauberk of Sunken Despair]|h|r",
+		}, -- [5]
+		{
+			["ID"] = 159377,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:159377::::::::120:253::35:3:5010:1612:4783:::|h[Chain of Consummate Power]|h|r",
+		}, -- [6]
+		{
+			["ID"] = 155868,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:155868::::::::120:253::35:3:5010:1612:4783:::|h[Kilt of Fanatical Consumption]|h|r",
+		}, -- [7]
+		{
+			["ID"] = 158308,
+			["Level"] = 445,
+			["Link"] = "|cffa335ee|Hitem:158308::::::::120:253::35:4:5010:1612:5850:4784:::|h[Souldrifting Sabatons]|h|r",
+		}, -- [8]
+		{
+			["ID"] = 168382,
+			["Level"] = 440,
+			["Link"] = "|cffa335ee|Hitem:168382::::::::120:253::5:4:4799:1502:5855:4783:::|h[Arcanamental Bindings]|h|r",
+		}, -- [9]
+		{
+			["ID"] = 168381,
+			["Level"] = 435,
+			["Link"] = "|cffa335ee|Hitem:168381::::::::120:253::5:4:4799:1502:5850:4783:::|h[Grips of the Scaled Arcanist]|h|r",
+		}, -- [10]
+		{
+			["ID"] = 159461,
+			["Level"] = 435,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cffa335ee|Hitem:159461:6108:::::::120:253::35:4:5009:4802:1607:4783:::|h[Band of the Ancient Dredger]|h|r",
+		}, -- [11]
+		{
+			["ID"] = 168890,
+			["Level"] = 435,
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cffa335ee|Hitem:168890::::::::120:253::5:4:4799:1502:5850:4783:::|h[Ring of the Highborne Courtier]|h|r",
+		}, -- [12]
+		{
+			["ID"] = 159614,
+			["Level"] = 445,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cffa335ee|Hitem:159614::::::::120:253::35:4:5010:1612:5850:4784:::|h[Galecaller's Boon]|h|r",
+		}, -- [13]
+		{
+			["ID"] = 169319,
+			["Level"] = 430,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cffa335ee|Hitem:169319::::::::120:253::5:3:4799:1502:4786:::|h[Dribbling Inkpod]|h|r",
+		}, -- [14]
+		{
+			["ID"] = 158375,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:158375::::::::120:253::16:5:5008:42:1597:5850:4783:::|h[Drape of the Loyal Vassal]|h|r",
+		}, -- [15]
+		{
+			["ID"] = 168273,
+			["Level"] = 430,
+			["Link"] = "|cffa335ee|Hitem:168273:6148:::::::120:253::5:3:4799:1502:4786:::|h[Shiver Venom Crossbow]|h|r",
+		}, -- [16]
+	},
+	["LastKeybindingsSet"] = 1,
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "HUNTER",
+	["LastAdded"] = 1,
+}

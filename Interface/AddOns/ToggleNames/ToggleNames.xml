@@ -1,0 +1,260 @@
+<?xml-stylesheet type="text/xsl" href="/css/wowui.xsl"?>
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+
+  <!-- Configuration panel -->
+	<Frame name="ToggleNamesOptionsFrame" hidden="true">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString inherits="GameFontNormalLarge" text="ToggleNames options">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="15" y="-15"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontWhite" text="Tick the boxes to define what to show where:">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="15" y="-40"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontNormal" text="Guilds">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="15" y="-64"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontNormal" text="Titles">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="15" y="-224"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<CheckButton name="$ParentShowGuildOutside" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-80"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Outside")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("guild", "outside")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowGuildCity" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-100"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Cities")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("guild", "city")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowGuildFiveMan" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-120"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Five-man dungeons")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("guild", "party")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowGuildRaid" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-140"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Raids")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("guild", "raid")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowGuildBattleground" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-160"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Battlegrounds")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("guild", "pvp")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowGuildArena" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-180"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Arena")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("guild", "arena")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowTitleOutside" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-240"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Outside")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("title", "outside")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowTitleCity" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-260"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Cities")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("title", "city")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowTitleFiveMan" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-280"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Five-man dungeons")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("title", "party")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowTitleRaid" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-300"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Raids")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("title", "raid")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowTitleBattleground" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-320"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Battlegrounds")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("title", "pvp")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+			<CheckButton name="$ParentShowTitleArena" inherits="InterfaceOptionsSmallCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="23" y="-340"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnLoad>
+						getglobal(self:GetName().."Text"):SetText("Arena")
+					</OnLoad>
+					<OnClick>
+						ToggleNames_ToggleOption("title", "arena")
+					</OnClick>
+				</Scripts>
+			</CheckButton>
+		</Frames>
+		<Scripts>
+			<OnLoad>
+				ToggleNamesOptionsFrame_OnLoad(self);
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>

@@ -1,0 +1,11 @@
+## Interface: 60200
+## Author: Michael
+## Title: Kui |cff9966ffNameplates|r OffTank
+## Notes: Display mobs aggroed on another tanks in a different color
+## Dependencies: Kui_Nameplates
+## X-Curse-Packaged-Version: r5
+## X-Curse-Project-Name: KuiNameplates OffTank
+## X-Curse-Project-ID: kuinameplates-offtank
+## X-Curse-Repository-ID: wow/kuinameplates-offtank/mainline
+
+Kui_Nameplates_OffTank.lua

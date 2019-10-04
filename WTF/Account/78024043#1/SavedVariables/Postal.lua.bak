@@ -1,0 +1,65 @@
+
+Postal3DB = {
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Aeldenan|Nemesis|Alliance|120|DEMONHUNTER", -- [1]
+				"Aeldenon|Azralon|Horde|120|DEATHKNIGHT", -- [2]
+				"Aeldenon|Nemesis|Alliance|120|WARLOCK", -- [3]
+				"Aeldonan|Azralon|Horde|120|DRUID", -- [4]
+				"Aeldonen|Nemesis|Alliance|120|PRIEST", -- [5]
+				"Aeldraeon|Azralon|Horde|120|HUNTER", -- [6]
+				"Aeldrenon|Azralon|Horde|120|MAGE", -- [7]
+				"Aeldronan|Nemesis|Alliance|120|DRUID", -- [8]
+				"Wahisietel|Goldrinn|Alliance|110|HUNTER", -- [9]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Aeldonan - Azralon"] = "Aeldonan - Azralon",
+		["Aeldonen - Nemesis"] = "Aeldonen - Nemesis",
+		["Wahisietel - Goldrinn"] = "Wahisietel - Goldrinn",
+		["Aeldenon - Nemesis"] = "Aeldenon - Nemesis",
+		["Aeldenon - Azralon"] = "Aeldenon - Azralon",
+		["Aeldronan - Nemesis"] = "Aeldronan - Nemesis",
+		["Aeldenan - Nemesis"] = "Aeldenan - Nemesis",
+		["Aeldrenon - Azralon"] = "Aeldrenon - Azralon",
+		["Aeldraeon - Azralon"] = "Aeldraeon - Azralon",
+	},
+	["profiles"] = {
+		["Aeldonan - Azralon"] = {
+		},
+		["Aeldonen - Nemesis"] = {
+		},
+		["Wahisietel - Goldrinn"] = {
+		},
+		["Aeldenon - Nemesis"] = {
+		},
+		["Aeldenon - Azralon"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Aeldraeon|Azralon|Horde", -- [1]
+					"Aeldonan|Azralon|Horde", -- [2]
+				},
+			},
+		},
+		["Aeldronan - Nemesis"] = {
+		},
+		["Aeldenan - Nemesis"] = {
+		},
+		["Aeldrenon - Azralon"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Aeldraeon|Azralon|Horde", -- [1]
+				},
+			},
+		},
+		["Aeldraeon - Azralon"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Aeldonan|Azralon|Horde", -- [1]
+				},
+			},
+		},
+	},
+}

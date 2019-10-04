@@ -1,0 +1,35 @@
+
+AddOnSkinsDB = {
+	["profileKeys"] = {
+		["Aelkham - Azralon"] = "Default",
+		["Aeldonen - Nemesis"] = "Default",
+		["Wahisietel - Goldrinn"] = "Default",
+		["Aeldenon - Nemesis"] = "Default",
+		["Aeldonan - Stormrage"] = "Default",
+		["Flavindozap - Bleeding Hollow"] = "Default",
+		["Aeldonen - Stormrage"] = "Default",
+		["Seilafeikko - Azralon"] = "Default",
+		["Aeldrenon - Azralon"] = "Default",
+		["Aeldonan - Azralon"] = "Default",
+		["Aelladron - Azralon"] = "Default",
+		["Rielas - Illidan"] = "Default",
+		["Aeldenon - Azralon"] = "Default",
+		["Aeldronan - Nemesis"] = "Default",
+		["Aeldenan - Stormrage"] = "Default",
+		["Aeldenan - Nemesis"] = "Default",
+		["Aeldenon - Stormrage"] = "Default",
+		["Aeldraeon - Azralon"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["Zygor"] = false,
+			["ChangeLogVersion"] = 4.24,
+			["Simulationcraft"] = false,
+			["Immersion"] = false,
+			["Swatter"] = false,
+			["Pawn"] = false,
+		},
+	},
+}
+AddOnSkinsDS = {
+}

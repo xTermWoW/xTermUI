@@ -1,0 +1,141 @@
+
+VWQL = {
+	["Aeldronan-Nemesis"] = {
+		["Filter"] = 63,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["VERSION"] = 88,
+	},
+	["AnchorQCBTop"] = 763.193359375,
+	["Scale"] = 0.8,
+	["DisableIconsGeneralMap947"] = true,
+	["Aeldraeon-Azralon"] = {
+		["VERSION"] = 89,
+		["Filter"] = 63,
+		["Quests"] = {
+			[55304] = true,
+			[55303] = true,
+			[43943] = true,
+			[55343] = true,
+		},
+		["FilterType"] = {
+		},
+	},
+	["Sort"] = 5,
+	["VERSION"] = 89,
+	["Aeldonan-Azralon"] = {
+		["VERSION"] = 89,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Aeldenon-Nemesis"] = {
+		["VERSION"] = 88,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Aeldenan-Nemesis"] = {
+		["VERSION"] = 88,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["AzeriteFormat"] = 20,
+	["ReverseSort"] = false,
+	["Ignore"] = {
+	},
+	["ShellGameCenter"] = 31.05560302734375,
+	["Aeldrenon-Azralon"] = {
+		["Filter"] = 63,
+		["VERSION"] = 89,
+		["Quests"] = {
+			[51428] = true,
+			[51434] = true,
+			[51625] = true,
+			[54592] = true,
+			[52832] = true,
+			[50570] = true,
+			[50572] = true,
+			[54545] = true,
+			[51586] = true,
+			[50517] = true,
+			[54614] = true,
+			[52476] = true,
+			[52163] = true,
+			[52165] = true,
+			[52864] = true,
+			[51102] = true,
+			[56396] = true,
+			[50667] = true,
+			[53945] = true,
+			[51429] = true,
+			[51559] = true,
+			[51316] = true,
+			[55301] = true,
+			[51252] = true,
+			[51641] = true,
+			[52871] = true,
+			[50869] = true,
+			[52236] = true,
+			[51611] = true,
+			[51453] = true,
+			[52850] = true,
+			[51893] = true,
+			[52278] = true,
+			[51839] = true,
+			[54550] = true,
+			[54615] = true,
+			[51811] = true,
+			[51642] = true,
+			[50652] = true,
+			[51779] = true,
+			[51461] = true,
+			[52756] = true,
+			[50660] = true,
+			[52804] = true,
+			[51609] = true,
+			[51989] = true,
+			[51739] = true,
+			[51761] = true,
+			[51379] = true,
+		},
+		["FilterType"] = {
+		},
+	},
+	["Aeldonen-Nemesis"] = {
+		["VERSION"] = 89,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Wahisietel-Goldrinn"] = {
+		["VERSION"] = 89,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["AnchorQCBLeft"] = 0,
+	["Aeldenon-Azralon"] = {
+		["VERSION"] = 89,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["HideLegion"] = true,
+}

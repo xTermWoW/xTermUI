@@ -1,0 +1,16 @@
+ElvUI_EverySecondCounts: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+Bazooka: disabled
+Bazooka_Options: disabled
+Kui_Enemy_Colors: disabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled
+Kui_Nameplates_OffTank: disabled
+Kui_SpellList_Config: disabled
+OmniCC: disabled
+OmniCC_Config: disabled
+LittleWigs: enabled

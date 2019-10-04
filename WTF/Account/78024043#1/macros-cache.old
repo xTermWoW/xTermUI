@@ -1,0 +1,147 @@
+VER 3 0000000000000019 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Hearthstone
+END
+VER 3 0000000000000012 "Arcane Shot" "132218"
+/petattack
+/cast Arcane Shot
+#showtooltip
+END
+VER 3 0000000000000028 "Barbed Shot Pet" "2058007"
+#showtooltip Barbed Shot
+/petattack
+/cast Barbed Shot
+END
+VER 3 0000000000000016 "Blizzardu" "135857"
+/cast [@cursor] Blizzard
+#showtooltip
+END
+VER 3 000000000000001B "Cataclysm AM" "840941"
+/cast [@cursor] Cataclysm
+#showtooltip
+END
+VER 3 000000000000000D "Cavera" "135770"
+/script SetRaidTarget("target",8);
+END
+VER 3 0000000000000009 "Cobra shot" "ABILITY_HUNTER_COBRASHOT"
+dwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwddddddddddddddddddddwwwwwwwwwwwwxwwwww
+END
+VER 3 0000000000000011 "Cobra Shot Pet" "461114"
+#showtooltip Cobra Shot
+/petattack
+/cast Cobra Shot
+END
+VER 3 000000000000000E "Dance" "1035053"
+/dance
+END
+VER 3 0000000000000008 "Darkglare + Trin" "1416161"
+/use 13
+/use 14
+/cast Summon Darkglare
+END
+VER 3 0000000000000001 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] Tranquilizing Shot;  [@mouseover,exists,mod:ctrl] Tranquilizing Shot; [@mouseover,exists,mod:shift] Tranquilizing Shot
+END
+VER 3 0000000000000004 "DoTs" "SPELL_HOLY_STOICISM"
+/cast Shadow Word: Pain
+/cast Vampiric Touch
+END
+VER 3 0000000000000026 "Earthwake" "451165"
+/cast [@cursor] Earthquake
+#showtooltip
+END
+VER 3 0000000000000017 "FireblastCancel" "135807"
+/stopcasting
+/cast Fire Blast
+END
+VER 3 0000000000000002 "Flamestriku" "135826"
+/cast [@cursor] Starfall
+#showtooltip
+END
+VER 3 000000000000000A "Fox" "SPELL_MISC_PETHEAL"
+/cast Aspect of the Fox
+/rw Fox! (Kurt o mais gostoso)
+END
+VER 3 000000000000001A "Infernal AT" "136219"
+/cast [@cursor] Summon Infernal
+#showtooltip
+END
+VER 3 0000000000000007 "Innervate" "136048"
+#showtooltip Innervate
+/cast [target=focus,exists,nodead] Innervate
+END
+VER 3 0000000000000025 "Jump" "236171"
+/cast [@cursor] Heroic Leap
+#showtooltip
+END
+VER 3 000000000000000C "Kcm" "ABILITY_HUNTER_KILLCOMMAND"
+#showtooltip Kill Command
+/petattack
+/cast Kill Command
+END
+VER 3 0000000000000006 "kiss" "CREATUREPORTRAIT_PORTAL_ISLEOFCONQUESTALLIANCE"
+/kiss
+END
+VER 3 0000000000000003 "Loucura" "ABILITY_CREATURE_CURSED_05"
+#showtooltip Loucura
+/cast Arcane Power
+/cast Alter Time
+/cast Mirror Image
+END
+VER 3 0000000000000010 "mdmouseover" "132180"
+#showtooltip Misdirection
+/cast [Koalas]Misdirection
+END
+VER 3 000000000000000F "Msm" "ABILITY_UPGRADEMOONGLAIVE"
+#showtooltip Multi-Shot
+/petattack
+/cast Multi-Shot
+END
+VER 3 0000000000000014 "REEEEEEEEEEEEEE" "136080"
+/cast Battle Cry
+/cast Avatar
+/cast Commanding Shout
+END
+VER 3 000000000000001D "Self Shield" "135940"
+#showtooltip
+/cast [@player] Power Word: Shield
+END
+VER 3 0000000000000027 "Self-Mend" "132171"
+/cast [@player, nomod] Spirit Mend
+END
+VER 3 000000000000001E "Shadow Mouse" "136201"
+/cast [@cursor] Shadow Crash
+#showtooltip
+END
+VER 3 000000000000001C "Sigil of Flame" "1344652"
+/cast [@cursor] Sigil of Flame
+#showtooltip
+END
+VER 3 0000000000000005 "sit" "INV_STAFF_59"
+/script for k,v in pairs({["Uniting the Isles"]=43341,["Assault on Broken Shore"]=46734,["Armies of Legionfall"]=46730})do print(format("%s: %s", k, IsQuestFlaggedCompleted(v) and "\124cff00ff00DONE\124r" or "\124cffff0000NOT DONE\124r")) end
+END
+VER 3 0000000000000018 "TSMMacro" "Achievement_Faction_GoldenLotus"
+/click TSMCancelAuctionBtn
+/click TSMDestroyBtn
+/click TSMShoppingBuyoutBtn
+/click TSMSniperBtn
+/click TSMAuctioningBtn
+/click TSMCraftingBtn
+END
+VER 3 0000000000000013 "ZygorAction1" "134400"
+END
+VER 3 0000000000000015 "ZygorAction2" "134400"
+END
+VER 3 000000000000001F "ZygorAction3" "134400"
+END
+VER 3 0000000000000020 "ZygorAction4" "134400"
+END
+VER 3 0000000000000021 "ZygorAction5" "134400"
+END
+VER 3 0000000000000022 "ZygorAction6" "134400"
+END
+VER 3 0000000000000023 "ZygorAction7" "134400"
+END
+VER 3 0000000000000024 "ZygorAction8" "134400"
+END
