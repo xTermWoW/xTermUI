@@ -1,0 +1,8 @@
+Bazooka: disabled
+Kui_Enemy_Colors: disabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled
+Kui_Nameplates_OffTank: disabled
+Kui_SpellList_Config: disabled

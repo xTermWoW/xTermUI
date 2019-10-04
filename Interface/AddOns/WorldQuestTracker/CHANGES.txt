@@ -1,0 +1,8 @@
+Changes since tag v8.2.0.381
+
+commit 03a23bdc0f5357877d5123ae0f559ffe5aa8ddc3
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Mon Sep 9 13:00:56 2019 -0300
+
+    Git Ignore localization files
+

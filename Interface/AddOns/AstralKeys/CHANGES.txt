@@ -1,0 +1,13 @@
+lightweight tag 90999687adbed21af91df7d1cefd6aa91bf83ad2 3.16
+Author:	Drew <phriked@gmail.com>
+Date:	Wed Aug 14 19:05:58 2019 -0700
+
+commit 90999687adbed21af91df7d1cefd6aa91bf83ad2
+Author: Drew <phriked@gmail.com>
+Date:   Wed Aug 14 19:05:58 2019 -0700
+
+    Bug fix
+    
+    - Fixed issue where the weekly best key is not being tracked
+    - Fixed issue where weekly best is being shown as current chest reward
+

@@ -1,0 +1,27 @@
+------------------------------------------------------------------------
+r5 | michaelspain | 2015-10-11 00:50:55 +0000 (Sun, 11 Oct 2015) | 1 line
+Changed paths:
+   M /trunk/Kui_Nameplates_OffTank.lua
+
+Fix for latest kuinameplates version.
+------------------------------------------------------------------------
+r4 | michaelspain | 2015-10-11 00:47:10 +0000 (Sun, 11 Oct 2015) | 1 line
+Changed paths:
+   M /trunk/Kui_Nameplates_OffTank.lua
+
+Force package update.
+------------------------------------------------------------------------
+r3 | michaelspain | 2015-10-10 23:57:52 +0000 (Sat, 10 Oct 2015) | 1 line
+Changed paths:
+   M /trunk/Kui_Nameplates_OffTank.lua
+
+Modified the plugin to correctly work with latest version of KuiNameplates
+------------------------------------------------------------------------
+r2 | michaelspain | 2015-09-06 14:37:52 +0000 (Sun, 06 Sep 2015) | 1 line
+Changed paths:
+   A /trunk/.pkgmeta
+   A /trunk/Kui_Nameplates_OffTank.lua
+   A /trunk/Kui_Nameplates_OffTank.toc
+
+First revision
+------------------------------------------------------------------------
